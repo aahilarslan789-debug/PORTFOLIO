@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aahil Arslan | Cybersecurity Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Fira+Code:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">AAHIL<span>_SEC</span></div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#learning">Practical Learning</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="hero">
+        <div class="container">
+            <p class="terminal-text">> whoami</p>
+            <h1>I'm <span class="highlight">Aahil Arslan</span></h1>
+            <h2>Junior SOC Analyst</h2>
+            <p class="hero-intro">Looking for a Junior SOC Analyst role to assist security teams in monitoring system telemetry, investigating incidents, and tuning defensive detections.</p>
+            <div class="btn-group">
+                <a href="#projects" class="btn btn-primary">View Projects</a>
+                <a href="https://github.com/aahilarslan789-debug" target="_blank" class="btn btn-secondary"><i class="fab fa-github"></i> GitHub</a>
+                <a href="#" target="_blank" class="btn btn-secondary"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="container">
+        <div class="section-title">
+            <h2>> about_me</h2>
+            <div class="line"></div>
+        </div>
+        <div class="about-content">
+            <div class="about-text">
+                <p>I am a <strong>Certified Ethical Hacker (CEH)</strong> and Cybersecurity Analyst with hands-on experience in threat detection, log analysis, and vulnerability assessment.</p>
+                <p>Through a structured remote cybersecurity internship, I built and documented <em>4 end-to-end security projects</em> covering network penetration testing, application-layer cryptography, web application audits (OWASP Top 10), and enterprise vulnerability scanning using Tenable Nessus.</p>
+                <p>I leverage an <strong>offensive mindset to build stronger defensive controls</strong>—analyzing system telemetry, inspecting network packets, and breaking down exploit chains to improve threat detection and alert triage.</p>
+            </div>
+            <div class="skills-box">
+                <h3>Technical Skill Set</h3>
+                <ul>
+                    <li><i class="fas fa-shield-alt"></i> <strong>SecOps:</strong> SIEM Log Analysis, System Telemetry Inspection, Alert Triage, Incident Analysis</li>
+                    <li><i class="fas fa-network-wired"></i> <strong>Network & Web:</strong> Packet Analysis (Wireshark), Reconnaissance (Nmap), Web App Testing (Burp Suite, OWASP Top 10)</li>
+                    <li><i class="fas fa-bug"></i> <strong>Vuln Mgmt:</strong> Enterprise Scanning (Tenable Nessus), CVSS v3.0 Severity Scoring, Patch Roadmaps</li>
+                    <li><i class="fas fa-code"></i> <strong>Tools & Scripting:</strong> Python (bcrypt, AES-128 encryption), Linux CLI, Windows Server Admin</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="container">
+        <div class="section-title">
+            <h2>> featured_projects</h2>
+            <div class="line"></div>
+        </div>
+        
+        <div class="project-grid">
+            <!-- Project 1 Card -->
+            <div class="project-card" onclick="openModal('modal-1')">
+                <div class="card-icon"><i class="fas fa-network-wired"></i></div>
+                <h3>Network Penetration Testing</h3>
+                <p>Reconnaissance and exploit execution of CVE-2011-2523 (vsftpd backdoor) using custom Python scripting to verify root access.</p>
+                <span class="view-details">View Deep Dive <i class="fas fa-arrow-right"></i></span>
+            </div>
+
+            <!-- Project 2 Card -->
+            <div class="project-card" onclick="openModal('modal-2')">
+                <div class="card-icon"><i class="fas fa-key"></i></div>
+                <h3>Cryptography & Password Security</h3>
+                <p>Python toolset developed to implement salted hashing (bcrypt), AES-128 file encryption, and real-time password entropy analysis.</p>
+                <span class="view-details">View Deep Dive <i class="fas fa-arrow-right"></i></span>
+            </div>
+
+            <!-- Project 3 Card -->
+            <div class="project-card" onclick="openModal('modal-3')">
+                <div class="card-icon"><i class="fas fa-globe"></i></div>
+                <h3>Web App Pen-Testing Lab</h3>
+                <p>Manual testing and exploitation of OWASP Top 10 critical flaws including SQLi, XSS, and File Uploads against DVWA.</p>
+                <span class="view-details">View Deep Dive <i class="fas fa-arrow-right"></i></span>
+            </div>
+
+            <!-- Project 4 Card -->
+            <div class="project-card" onclick="openModal('modal-4')">
+                <div class="card-icon"><i class="fas fa-search"></i></div>
+                <h3>Vulnerability Assessment</h3>
+                <p>Enterprise network audit using Tenable Nessus, analyzing 73 findings mapped to a CVSS v3.0 prioritized remediation roadmap.</p>
+                <span class="view-details">View Deep Dive <i class="fas fa-arrow-right"></i></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Practical Learning & Achievements Section -->
+    <section id="learning" class="container">
+        <div class="section-title">
+            <h2>> practical_learning</h2>
+            <div class="line"></div>
+        </div>
+        <div class="about-content">
+            <div class="about-text">
+                <h3>Hands-On Cyber Labs</h3>
+                <p>Beyond structured projects, I actively develop my skills through interactive ranges and platforms.</p>
+                <ul style="list-style: none; margin-top: 15px;">
+                    <li style="margin-bottom: 10px;"><i class="fas fa-server" style="color: var(--primary-red); width: 25px;"></i> <strong>TryHackMe:</strong> Completed numerous SOC Level 1 and Blue Team rooms focusing on SIEM, traffic analysis, and endpoint security.</li>
+                    <li style="margin-bottom: 10px;"><i class="fas fa-flag" style="color: var(--primary-red); width: 25px;"></i> <strong>Capture The Flag (CTF):</strong> Participate in technical challenges requiring reverse engineering, log analysis, and vulnerability exploitation.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="container">
+        <div class="section-title">
+            <h2>> certifications</h2>
+            <div class="line"></div>
+        </div>
+        <div class="cert-grid">
+            <div class="cert-card">
+                <i class="fas fa-certificate cert-icon"></i>
+                <div class="cert-info">
+                    <h3>Certified Ethical Hacker (CEH)</h3>
+                    <p><strong>EC-Council</strong> | Validates baseline knowledge of threat vectors, offensive mechanics, and defensive mitigation.</p>
+                    <a href="#" target="_blank" class="cert-link">View Certificate</a>
+                </div>
+            </div>
+            <div class="cert-card">
+                <i class="fas fa-award cert-icon"></i>
+                <div class="cert-info">
+                    <h3>Remote Cybersecurity Internship</h3>
+                    <p>Verified completion of structured threat detection, scanning, and penetration testing deliverables.</p>
+                    <a href="#" target="_blank" class="cert-link">View Certificate</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Footer -->
+    <footer id="contact">
+        <div class="container footer-content">
+            <h2>> initiate_connection</h2>
+            <p>Actively looking for SOC Analyst opportunities to monitor telemetry and tune defensive detections.</p>
+            <div class="social-links">
+                <a href="#"><i class="fas fa-envelope"></i> Email</a>
+                <a href="#" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="https://github.com/aahilarslan789-debug" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+            <p class="copyright">© 2026 Aahil Arslan. Designed for Security Operations.</p>
+        </div>
+    </footer>
+
+    <!-- ============================================== -->
+    <!-- PROJECT MODALS (Hidden by default)             -->
+    <!-- ============================================== -->
+
+    <!-- Modal 1: Network Pentest -->
+    <div id="modal-1" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('modal-1')">&times;</span>
+            <h2>Project 1: Network Penetration Testing</h2>
+            
+            <div class="modal-section">
+                <h4>Why I Built It</h4>
+                <p>To understand the attack mechanics behind network exploitation. By executing an exploit myself, I learned how initial access and backdoors manifest in network traffic and logs, which is critical for writing effective SOC detection rules.</p>
+            </div>
+            
+            <div class="modal-section">
+                <h4>Objective</h4>
+                <p>Perform network reconnaissance on a target host, identify running services, locate known vulnerabilities (<strong>CVE-2011-2523</strong>), and safely execute an exploit to achieve root access.</p>
+            </div>
+
+            <div class="modal-section">
+                <h4>Tools Used</h4>
+                <p>Kali Linux, Nmap, Metasploitable 2, Python (Custom Script), Wireshark.</p>
+            </div>
+
+            <div class="modal-section">
+                <h4>What I Did</h4>
+                <ul>
+                    <li>Ran targeted Nmap scans (<code>-sV -sC</code>) to enumerate open ports and identify the service version on port 21 (vsftpd 2.3.4).</li>
+                    <li>Researched the target daemon and identified the CVE-2011-2523 backdoor vulnerability.</li>
+                    <li>Reviewed the exploit logic and executed a Python script to trigger the backdoor mechanism by sending the <code>:)</code> string to the FTP service.</li>
+                    <li>Intercepted the opened shell on bind port 6200 using Netcat and verified root access using <code>whoami</code>.</li>
+                </ul>
+            </div>
+
+            <div class="modal-section">
+                <h4>What I Learned & Outcome</h4>
+                <p>I learned how malicious payloads interact with open ports, how high-numbered bind ports are opened during an exploit, and how to track unauthenticated root shell spawn attempts in network telemetry. <strong>Outcome:</strong> Successfully compromised the target machine, documented the attack chain, and detailed defensive mitigations.</p>
+            </div>
+
+            <div class="modal-actions">
+                <a href="https://github.com/aahilarslan789-debug/cloudexify-sec-p1-Aahil-Arslan" class="btn btn-primary" target="_blank"><i class="fab fa-github"></i> View Repository</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2: Cryptography -->
+    <div id="modal-2" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('modal-2')">&times;</span>
+            <h2>Project 2: Cryptography & Password Security Lab</h2>
+            
+            <div class="modal-section">
+                <h4>Why I Built It</h4>
+                <p>Insecure password storage and unencrypted files lead directly to credential theft and data leaks. I built this project to practice using real security libraries to protect passwords and encrypt files at the application layer.</p>
+            </div>
+            
+            <div class="modal-section">
+                <h4>Objective</h4>
+                <p>Build three Python programs on Kali Linux to stop plain-text password storage, encrypt sensitive files using AES-128, and automatically check password strength before saving credentials.</p>
+            </div>
+
+            <div class="modal-section">
+                <h4>Tools Used</h4>
+                <p>Kali Linux, Python 3, <code>bcrypt</code> library, <code>cryptography</code> library (AES-128 / Fernet), Linux CLI.</p>
+            </div>
+
+            <div class="modal-section">
+                <h4>What I Did</h4>
+                <ul>
+                    <li><strong>Secure Authentication:</strong> Built a login and registration system using bcrypt to hash and salt passwords so credentials are never saved in plain text.</li>
+                    <li><strong>File Encryption:</strong> Created a tool using AES-128 encryption to safely encrypt and decrypt sensitive files on disk.</li>
+                    <li><strong>Password Analyzer:</strong> Developed a script that checks if a user's password is strong or weak, shows missing requirements, and gives security tips to fix it.</li>
+                </ul>
+            </div>
+
+            <div class="modal-section">
+                <h4>What I Learned & Outcome</h4>
+                <p>I learned how password salting prevents rainbow table attacks, how AES encryption keeps files safe at rest, and how automated password checks reduce brute-force risks. <strong>Outcome:</strong> Built 3 working Python security scripts and created a full project report with terminal screenshots.</p>
+            </div>
+
+            <div class="modal-actions">
+                <a href="#" class="btn btn-primary" target="_blank"><i class="fab fa-github"></i> View Repository</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3: Web App Pentest -->
+    <div id="modal-3" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('modal-3')">&times;</span>
+            <h2>Project 3: Web Application Penetration Testing Lab</h2>
+            
+            <div class="modal-section">
+                <h4>Why I Built It</h4>
+                <p>Web applications are often the main entry point for external attacks. I built this lab to practice identifying, manually exploiting, and documenting real-world web vulnerabilities using the OWASP Top 10 framework.</p>
+            </div>
+
+            <div class="modal-section">
+                <h4>Objective</h4>
+                <p>Perform a hands-on web penetration test against Damn Vulnerable Web Application (DVWA) to find critical security flaws, demonstrate proof-of-concept exploits, and provide fixes to secure the application.</p>
+            </div>
+
+            <div class="modal-section">
+                <h4>Tools Used</h4>
+                <p>Burp Suite Community Edition, Firefox ESR, OWASP Top 10 Framework, Linux CLI.</p>
+            </div>
+
+            <div class="modal-section">
+                <h4>What I Did</h4>
+                <ul>
+                    <li><strong>Mapping & Interception:</strong> Configured Burp Suite proxy with Firefox ESR to intercept HTTP traffic and map out all target attack surfaces.</li>
+                    <li><strong>Exploitation:</strong> Manually tested and successfully exploited SQL Injection, Login Authentication Bypass, and Unrestricted File Upload vulnerabilities.</li>
+                    <li><strong>High-Risk Testing:</strong> Executed Cross-Site Scripting (XSS) payloads and verified Cross-Site Request Forgery (CSRF) flaws across target input fields.</li>
+                </ul>
+            </div>
+
+            <div class="modal-section">
+                <h4>What I Learned & Outcome</h4>
+                <p>I learned how attackers manipulate HTTP requests, how unsanitized inputs lead to database compromise, and how to verify vulnerabilities without automated scanners. <strong>Outcome:</strong> Delivered a detailed penetration testing report featuring visual evidence and step-by-step remediation guidance.</p>
+            </div>
+
+            <div class="modal-actions">
+                <a href="#" class="btn btn-primary" target="_blank"><i class="fab fa-github"></i> View Repository</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 4: Vuln Assessment -->
+    <div id="modal-4" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('modal-4')">&times;</span>
+            <h2>Project 4: Vulnerability Assessment & Remediation Lab</h2>
+            
+            <div class="modal-section">
+                <h4>Why I Built It</h4>
+                <p>Automated vulnerability scanning is a core function in enterprise security operations. I built this lab to practice running automated network scans, prioritizing real-world security risks using CVSS scoring, and building structured remediation roadmaps for SOC teams.</p>
+            </div>
+
+            <div class="modal-section">
+                <h4>Objective</h4>
+                <p>Perform an automated vulnerability assessment against a Metasploitable2 host using Tenable Nessus, analyze scan telemetry to validate findings, and categorize remediation priorities based on threat severity.</p>
+            </div>
+
+            <div class="modal-section">
+                <h4>Tools Used</h4>
+                <p>Tenable Nessus Essentials, Metasploitable2 VM, CVSS v3.0 Framework, Linux CLI.</p>
+            </div>
+
+            <div class="modal-section">
+                <h4>What I Did</h4>
+                <ul>
+                    <li><strong>Automated Scanning:</strong> Deployed Tenable Nessus to conduct a comprehensive network vulnerability scan.</li>
+                    <li><strong>Findings Analysis:</strong> Identified 73 total vulnerabilities (10 Critical, 7 High, 23 Medium, 9 Low).</li>
+                    <li><strong>Remediation Mapping:</strong> Structured a priority-driven patching schedule mapped to CVSS v3.0 scores (Critical: 0-24hrs, High: 1-7 days, Medium: 1-30 days).</li>
+                </ul>
+            </div>
+
+            <div class="modal-section">
+                <h4>What I Learned & Outcome</h4>
+                <p>I learned how scanners collect host telemetry, how to separate critical exposures from low-risk findings, and how to translate raw CVSS metrics into actionable timelines. <strong>Outcome:</strong> Generated a complete assessment report with Nessus screenshots and a structured patching roadmap.</p>
+            </div>
+
+            <div class="modal-actions">
+                <a href="#" class="btn btn-primary" target="_blank"><i class="fab fa-github"></i> View Repository</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
