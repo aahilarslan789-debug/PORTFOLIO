@@ -246,69 +246,47 @@
         </div>
     </div>
     
-<!-- ============================================================ -->
-<!--                    PROJECT 3: CARD SECTION                    -->
-<!-- ============================================================ -->
-<div class="project-card">
-    <h3>Project 3: Web Application Penetration Testing Lab</h3>
-    <p>Manual security assessment of OWASP Top 10 vulnerabilities (SQLi, XSS, CSRF, File Uploads) on DVWA.</p>
+ <!-- Modal 3: Web App Pentest Lab -->
+    <div id="modal-3" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('modal-3')">&times;</span>
+            <h2>Project 3: Web Application Penetration Testing Lab</h2>
+            
+            <div class="modal-section">
+                <h4>Why I Built It</h4>
+                <p>Web applications are often the main entry point for external attacks. I built this lab to practice identifying, manually exploiting, and documenting real-world web vulnerabilities using the OWASP Top 10 framework.</p>
+            </div>
+
+            <div class="modal-section">
+                <h4>Objective</h4>
+                <p>Perform a hands-on web penetration test against Damn Vulnerable Web Application (DVWA) to find critical security flaws, demonstrate proof-of-concept exploits, and provide fixes to secure the application.</p>
+            </div>
+
+            <div class="modal-section">
+                <h4>Tools Used</h4>
+                <p>Burp Suite Community Edition, Firefox ESR, OWASP Top 10 Framework, Linux CLI.</p>
+            </div>
+
+            <div class="modal-section">
+                <h4>What I Did</h4>
+                <ul>
+                    <li><strong>Mapping & Interception:</strong> Configured Burp Suite proxy with Firefox ESR to intercept HTTP traffic and map out all target attack surfaces.</li>
+                    <li><strong>Exploitation:</strong> Manually tested and successfully exploited SQL Injection, Login Authentication Bypass, and Unrestricted File Upload vulnerabilities.</li>
+                    <li><strong>High-Risk Testing:</strong> Executed Cross-Site Scripting (XSS) payloads and verified Cross-Site Request Forgery (CSRF) flaws across target input fields.</li>
+                </ul>
+            </div>
+
+            <div class="modal-section">
+                <h4>What I Learned & Outcome</h4>
+                <p>I learned how attackers manipulate HTTP requests, how unsanitized inputs lead to database compromise, and how to verify vulnerabilities without automated scanners. <strong>Outcome:</strong> Delivered a detailed penetration testing report featuring visual evidence and step-by-step remediation guidance.</p>
+            </div>
+
+            <div class="modal-actions">
+                <a href="https://github.com/aahilarslan789-debug/cloudexify-sec-p3-Aahilarslan" class="btn btn-primary" target="_blank"><i class="fab fa-github"></i> View Repository</a>
+            </div>
+        </div>
+    </div>   
     
-    <!-- Button that opens the modal popup -->
-    <span class="view-details" onclick="openModal('modal-project-3')">View Details <i class="fas fa-arrow-right"></i></span>
-</div>
-
-
-<!-- ============================================================ -->
-<!--                   PROJECT 3: POPUP MODAL                     -->
-<!-- ============================================================ -->
-<div id="modal-project-3" class="modal">
-    <div class="modal-content">
-        <!-- Close Button (X) -->
-        <span class="close-btn" onclick="closeModal('modal-project-3')">&times;</span>
-        
-        <h2>Project 3: Web Application Penetration Testing Lab</h2>
-        <p>Manual security assessment of OWASP Top 10 vulnerabilities (SQLi, XSS, CSRF, File Uploads) on DVWA.</p>
-
-        <div class="modal-section">
-            <h4>Why I Built It</h4>
-            <p>Web applications are often the main entry point for external attacks. I built this lab to practice identifying, manually exploiting, and documenting real-world web vulnerabilities using the OWASP Top 10 framework.</p>
-        </div>
-
-        <div class="modal-section">
-            <h4>Objective</h4>
-            <p>Perform a hands-on web penetration test against Damn Vulnerable Web Application (DVWA) to find critical security flaws, demonstrate proof-of-concept exploits, and provide fixes to secure the application.</p>
-        </div>
-
-        <div class="modal-section">
-            <h4>Tools Used</h4>
-            <p>Burp Suite Community Edition, Firefox ESR, OWASP Top 10 Framework, Linux CLI.</p>
-        </div>
-
-        <div class="modal-section">
-            <h4>What I Did</h4>
-            <ul>
-                <li><strong>Mapping & Interception:</strong> Configured Burp Suite proxy with Firefox ESR to intercept HTTP traffic and map out all target attack surfaces.</li>
-                <li><strong>Exploitation:</strong> Manually tested and successfully exploited SQL Injection, Login Authentication Bypass, and Unrestricted File Upload vulnerabilities.</li>
-                <li><strong>High-Risk Testing:</strong> Executed Cross-Site Scripting (XSS) payloads and verified Cross-Site Request Forgery (CSRF) flaws across target input fields.</li>
-            </ul>
-        </div>
-
-        <div class="modal-section">
-            <h4>What I Learned & Outcome</h4>
-            <p>I learned how attackers manipulate HTTP requests, how unsanitized inputs lead to database compromise, and how to verify vulnerabilities without automated scanners. <strong>Outcome:</strong> Delivered a detailed penetration testing report featuring visual evidence and step-by-step remediation guidance.</p>
-        </div>
-
-        <!-- Repository Link Button -->
-        <div class="modal-actions" style="margin-top: 25px;">
-            <a href="https://github.com/aahilarslan789-debug/cloudexify-sec-p3-Aahilarslan" target="_blank" class="btn btn-primary">
-                <i class="fab fa-github"></i> View Repository
-            </a>
-        </div>
-    </div>
-</div>    
-
-
-
     <!-- Modal 4: Vuln Assessment -->
     <div id="modal-4" class="modal">
         <div class="modal-content">
