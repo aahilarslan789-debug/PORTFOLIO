@@ -12,17 +12,31 @@
 </head>
 <body>
 
-    <!-- ==================== FRONT PAGE HERO SECTION ==================== -->
-    <header class="hero">
-        <div class="hero-content">
-            <!-- Profile Photo (Resized to 170px with top margin offset) -->
-            <img src="profile.jpg" alt="Aahil Arslan" class="profile-img" style="width: 170px; height: 170px; border-radius: 50%; object-fit: cover; margin-top: 25px; margin-bottom: 20px; border: 3px solid #e50914; box-shadow: 0 0 20px rgba(229, 9, 20, 0.4);">            
+    <!-- ==================== NAVIGATION BAR (RIGHT ALIGNED) ==================== -->
+    <nav class="navbar" style="display: flex; justify-content: flex-end; padding: 20px 40px; background-color: transparent;">
+        <ul class="nav-links" style="display: flex; gap: 25px; list-style: none; margin: 0; padding: 0;">
+            <li><a href="#about" style="color: #ffffff; text-decoration: none; font-weight: 500;">About</a></li>
+            <li><a href="#projects" style="color: #ffffff; text-decoration: none; font-weight: 500;">Projects</a></li>
+            <li><a href="#practical-learning" style="color: #ffffff; text-decoration: none; font-weight: 500;">Practical Learning</a></li>
+            <li><a href="#certifications" style="color: #ffffff; text-decoration: none; font-weight: 500;">Certifications</a></li>
+        </ul>
+    </nav>
+
+    <!-- ==================== HERO SECTION (CENTERED & PROPERLY MARGINED) ==================== -->
+    <header class="hero" style="display: flex; justify-content: center; align-items: center; padding: 40px 20px; text-align: center;">
+        <div class="hero-content" style="max-width: 800px; width: 100%; margin: 0 auto; display: flex; flex-direction: column; align-items: center;">
             
-            <h1>Aahil Arslan</h1>
-            <h2>Cybersecurity Specialist & SOC Analyst</h2>
-            <p>Certified Ethical Hacker (CEH) | Threat Detection & Incident Response</p>
+            <!-- Profile Photo (Centered, 170px) -->
+            <img src="profile.jpg" alt="Aahil Arslan" class="profile-img" style="width: 170px; height: 170px; border-radius: 50%; object-fit: cover; margin-bottom: 20px; border: 3px solid #e50914; box-shadow: 0 0 20px rgba(229, 9, 20, 0.4); display: block;">            
+            
+            <h1 style="margin: 10px 0 5px 0; font-size: 2.5rem; color: #ffffff;">Aahil Arslan</h1>
+            <h2 style="margin: 5px 0 10px 0; font-size: 1.3rem; color: #e50914; font-weight: 600;">Cybersecurity Specialist & SOC Analyst</h2>
+            <p style="margin: 0; font-size: 1.05rem; color: #cccccc; max-width: 600px;">Certified Ethical Hacker (CEH) | Threat Detection & Incident Response</p>
+            
         </div>
     </header>
+
+    <!-- Rest of portfolio content (About, Projects, Certifications) continues below -->
 
     <!-- Navigation and rest of portfolio sections (About, Projects, Certifications) continue below -->
 
