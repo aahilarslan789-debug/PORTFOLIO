@@ -95,7 +95,7 @@
     <!-- Projects Section -->
     <section id="projects" class="container">
         <div class="section-title">
-            <h2>> featured_projects</h2>
+            <h2>> Featured_projects</h2>
             <div class="line"></div>
         </div>
         
@@ -134,23 +134,41 @@
         </div>
     </section>
 
-    <!-- Practical Learning & Achievements Section -->
-    <section id="learning" class="container">
-        <div class="section-title">
-            <h2>> practical_learning</h2>
-            <div class="line"></div>
+    <!-- Practical Learning & Ongoing Labs Section -->
+<section id="learning" class="container">
+    <div class="section-title">
+        <h2>> practical_learning</h2>
+        <div class="line"></div>
+    </div>
+    <div class="about-content">
+        <div class="about-text">
+            <h3>Active Security Labs & Ongoing Research</h3>
+            <p>Beyond structured projects, I actively expand my technical capabilities through hands-on threat labs and active tool development.</p>
+            
+            <ul style="list-style: none; margin-top: 20px; padding: 0;">
+                
+                <!-- LAB 1: PHISHING THREAT ANALYSIS -->
+                <li style="margin-bottom: 20px; background: rgba(255, 255, 255, 0.03); padding: 15px; border-radius: 6px; border-left: 3px solid var(--primary-red);">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+                        <strong><i class="fas fa-fish" style="color: var(--primary-red); width: 25px;"></i> Email Phishing & Header Triage Lab</strong>
+                        <span style="background: rgba(229, 9, 20, 0.2); color: var(--primary-red); font-size: 0.75rem; padding: 2px 8px; border-radius: 4px; font-weight: bold;">IN PROGRESS</span>
+                    </div>
+                    <p style="margin: 0; font-size: 0.95rem; color: #ccc;">Analyzing malicious email headers, validating SPF/DKIM/DMARC authentication failures, and extracting suspicious URLs and attachments for threat triage.</p>
+                </li>
+
+                <!-- LAB 2: AI THREAT INTEL DASHBOARD -->
+                <li style="margin-bottom: 10px; background: rgba(255, 255, 255, 0.03); padding: 15px; border-radius: 6px; border-left: 3px solid var(--primary-red);">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+                        <strong><i class="fas fa-brain" style="color: var(--primary-red); width: 25px;"></i> OpenOSINT AI Threat Dashboard</strong>
+                        <span style="background: rgba(229, 9, 20, 0.2); color: var(--primary-red); font-size: 0.75rem; padding: 2px 8px; border-radius: 4px; font-weight: bold;">IN DEVELOPMENT</span>
+                    </div>
+                    <p style="margin: 0; font-size: 0.95rem; color: #ccc;">Developing a Python and Streamlit dashboard querying open threat intelligence feeds (OSINT) to correlate Indicators of Compromise (IOCs) such as malicious IPs, domains, and file hashes.</p>
+                </li>
+
+            </ul>
         </div>
-        <div class="about-content">
-            <div class="about-text">
-                <h3>Hands-On Cyber Labs</h3>
-                <p>Beyond structured projects, I actively develop my skills through interactive ranges and platforms.</p>
-                <ul style="list-style: none; margin-top: 15px;">
-                    <li style="margin-bottom: 10px;"><i class="fas fa-server" style="color: var(--primary-red); width: 25px;"></i> <strong>TryHackMe:</strong> Completed numerous SOC Level 1 and Blue Team rooms focusing on SIEM, traffic analysis, and endpoint security.</li>
-                    <li style="margin-bottom: 10px;"><i class="fas fa-flag" style="color: var(--primary-red); width: 25px;"></i> <strong>Capture The Flag (CTF):</strong> Participate in technical challenges requiring reverse engineering, log analysis, and vulnerability exploitation.</li>
-                </ul>
-            </div>
-        </div>
-    </section>
+    </div>
+</section>
 
     <!-- Certifications Section -->
     <section id="certifications" class="container">
